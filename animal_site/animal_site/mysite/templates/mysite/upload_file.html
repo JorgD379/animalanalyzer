@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2> Загрузите файл</h2>
+<br>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+    <button type="submit">Upload file</button>
+</form>
+<br>
+{% if file_names %}
+<p>Файлы загружены! Нажмите на кнопку чтобы продолжить</p>
+<a class="btn btn-primary" href="{% url 'result' %}?file_names={{ file_names }}&zip_path={{ zip_path }}" role="button">Начать</a>
+{% endif %}
+{% endblock %}
