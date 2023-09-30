@@ -9,8 +9,10 @@
     <button type="submit">Upload file</button>
 </form>
 <br>
-{% if file_names %}
+{% if zip_path %}
 <p>Файлы загружены! Нажмите на кнопку чтобы продолжить</p>
-<a class="btn btn-primary" href="{% url 'result' %}?file_names={{ file_names }}&zip_path={{ zip_path }}" role="button">Начать</a>
+<a class="btn btn-primary" href="{% url 'result' %}?zip_path={{ zip_path }}&" role="button">Начать</a>
+<br>
+<p>Примерное время ожидания - {{ wait_time }}</p>
 {% endif %}
 {% endblock %}

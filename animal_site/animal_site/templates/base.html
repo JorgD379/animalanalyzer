@@ -4,39 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>{% block title %}EasyML{% endblock %}</title>
+  <title>{% block title %}AnimalAnalyzer{% endblock %}</title>
+
   <style>
-    .box__dragndrop,
-.box__uploading,
-.box__success,
-.box__error {
-  display: none;
-}
-
-.box__dragbox_background {
-    background-color:#ebebeb;
-    opacity:0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition:'opacity 0.5s ease-in-out'
-}
-
-.box__dragbox {
-    border: 3px dashed #c1c1c1;
-    height: 200px;
-    border-radius: 10px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.box__dragtext {
-    color: grey;
-    z-index: 1;
-}
-  </style>
+        .transparent-button {
+            opacity: 0.5; /* Установите желаемую прозрачность здесь */
+        }
+    </style>
 </head>
 <body >
   <nav class="navbar navbar-expand-lg navbar-light mb-4" style="background-color:#6d9eeb">

@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>excel документ с результатами находится в папке media внутри проекта</h1>
+<h1>Скачать готовыe файлы вы можете по кнопкам ниже</h1>
 <br>
-<h2>D:\\django-sites\\EasyML\\EasyML\\media\\{{ link }}</h2>
 
+<h2>Рассортированные файлы</h2>
+<a class="btn btn-primary" href="{% url 'download_zip' %}" role="button">Скачать</a>
+
+<br>
+<br>
+<h2>Excel файл</h2>
+<a class="btn btn-primary" href="{% url 'download_excel' %}" role="button">Скачать</a>
 {% endblock %}
